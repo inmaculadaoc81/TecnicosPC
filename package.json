@@ -1,11 +1,11 @@
 {
-  "name": "servicio-tecnico-pc-madrid",
+  "name": "pcmadrid-onepage",
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": "24.x"
+    "node": "22.x"
   },
   "dependencies": {
-    "googleapis": "^144.0.0"
+    "nodemailer": "^6.9.16"
   }
 }
