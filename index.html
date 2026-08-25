@@ -24,9 +24,20 @@
     <a href="#datos">Tus datos</a>
     <a href="#recogida">Recogida</a>
     <a href="#cita">Pedir cita</a>
+    <a href="#guia">Guía</a>
     <a href="#contacto">Contacto</a>
     <a class="navcall" href="tel:+34914468503">Atención Telefónica 24 horas 365 días</a>
   </nav>
+  <button class="menu-btn" onclick="document.getElementById('mobileMenu').hidden=!document.getElementById('mobileMenu').hidden" aria-label="Abrir menú">☰</button>
+</div>
+<div id="mobileMenu" class="mobile-menu" hidden>
+  <a href="#equipos">Equipos</a>
+  <a href="#problemas">Qué le pasa</a>
+  <a href="#datos">Tus datos</a>
+  <a href="#recogida">Recogida</a>
+  <a href="#cita">Pedir cita</a>
+  <a href="#guia">Guía</a>
+  <a href="#contacto">Contacto</a>
 </div>
 </header>
 
@@ -199,6 +210,18 @@
 </div>
 </section>
 
+<section class="seo-content" id="guia">
+<div class="wrap">
+  <div class="kicker">Servicio técnico informático en Madrid</div>
+  <h2 class="title">Reparación de ordenadores en Madrid, sin sorpresas ni piezas de más.</h2>
+  <div class="seo-text">
+    <p>En PCMadrid reparamos ordenadores portátiles, PC de sobremesa, equipos All-in-One, gaming, workstations y Mini PC de las principales marcas. No importa el formato del equipo ni la marca: nos centramos en entender qué le ocurre realmente antes de proponer ninguna intervención, y ese diagnóstico es siempre gratuito.</p>
+    <p>Un mismo síntoma —un equipo que no enciende, se reinicia solo o va cada vez más lento— puede tener más de una causa: alimentación, placa base, almacenamiento, temperatura o memoria. Por eso revisamos el equipo de forma conjunta antes de sustituir ningún componente, para no cambiar piezas que no son responsables de la avería y para que el presupuesto que te demos se ajuste al problema real.</p>
+    <p>Puedes traer tu equipo a nuestras instalaciones en Madrid o solicitar el servicio de recogida si prefieres no desplazarte. Te mantenemos informado durante todo el proceso, por teléfono o WhatsApp, y solo empezamos la reparación cuando ya conoces el diagnóstico, el tiempo estimado y las opciones disponibles para tus datos y archivos.</p>
+  </div>
+</div>
+</section>
+
 <section id="contacto">
 <div class="wrap contact-grid">
   <div>
@@ -278,7 +301,7 @@ createChat({
  const apply=()=>{
    const root=document.querySelector('#n8n-chat'); if(!root)return;
    const t=root.querySelector('.chat-window-toggle,[class*="chat-window-toggle"]');
-   const w=root.querySelector('.chat-window,[class*="chat-window"]');
+   const w=root.querySelector('.chat-window,[class*="chat-window"]:not([class*="toggle"])');
    const mobile=matchMedia('(max-width:600px)').matches;
 
    if(t){
@@ -286,6 +309,7 @@ createChat({
      t.style.setProperty('right',mobile?'16px':'22px','important');
      t.style.setProperty('bottom','96px','important');
      t.style.setProperty('z-index','10060','important');
+     t.style.setProperty('border','1px solid #fff','important');
    }
 
    if(w){
