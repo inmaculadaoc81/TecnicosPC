@@ -62,7 +62,7 @@ a{text-decoration:none;color:inherit}
 .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.16fr .84fr;gap:52px;align-items:start}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--blue);font-size:12px;font-weight:950;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
 .eyebrow::before{content:"";width:34px;height:4px;background:var(--blue);border-radius:999px}
-h1{font-size:clamp(38px,4.2vw,56px);line-height:1.03;letter-spacing:-2px;margin:0 0 24px;max-width:820px}
+h1{font-size:clamp(46px,5.6vw,74px);line-height:1.04;letter-spacing:-2.2px;margin:0 0 24px;max-width:820px}
 .accent{color:var(--blue)}
 .diag{display:inline-flex;align-items:center;gap:11px;padding:12px 16px;border-radius:999px;background:#eaf3ff;border:1px solid #cbdcff;color:#1755ad;font-weight:900}
 .diag span{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--blue);color:#fff}
@@ -175,7 +175,7 @@ footer{background:#0b1b33;color:#fff;padding:34px 0}
 @media(max-width:600px){
   .wrap{width:min(100% - 28px,1180px)}
   .hero{padding-top:46px}
-  h1{font-size:40px;letter-spacing:-1.5px}
+  h1{font-size:48px;letter-spacing:-1.5px}
   .type-grid,.problem-grid,.steps-grid,.ctas,form{grid-template-columns:1fr}
   .phone,.full{grid-column:auto}
   .hero::after,.hero-chip{display:none}

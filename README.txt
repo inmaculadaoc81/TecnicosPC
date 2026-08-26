@@ -45,7 +45,33 @@ CONTACT_EMAIL=soporte@kelatos.com
 El correo no aparece visible en la web; solo se utiliza en /api/contacto.
 
 Google Analytics:
-No se proporcionó código para esta web; no se ha añadido ninguno.
+G-KHXWKJ1XDB
+
+HISTORIAL: el repositorio era multipágina (20 páginas /modelos/ por
+tipo de equipo y marca) y se convirtió a one-page; esas páginas
+fueron eliminadas en commits anteriores. Como ya no existen en el
+sitemap actual, se ha añadido middleware.mjs para redirigir (301)
+cualquier URL antigua a la home, evitando 404 en enlaces indexados o
+backlinks antiguos. Excluye /api/* y cualquier ruta con extensión de
+archivo. Se añadió "@vercel/functions": "^2.0.3" a package.json como
+dependencia de esta función.
+
+REVISIÓN ADICIONAL (esta pasada):
+- Ya estaba bien: banner de cookies, schema.org LocalBusiness, sección
+  SEO, menú móvil, borde blanco del chat, api/contacto.js con SMTP +
+  nodemailer, teléfono consistente. No se ha modificado ninguno de
+  estos.
+- Google Analytics: no existía. Añadido G-KHXWKJ1XDB.
+- Meta robots: no existía. Añadido.
+- .navcall: ya tenía white-space:nowrap en CSS, pero el texto seguía
+  siendo largo ("Atención Telefónica 24 horas 365 días") y deformaba
+  la píldora. Acortado a solo el número (mismo número,
+  +34 914 46 85 03).
+- H1 de portada reescrito, corto, directo y totalmente afirmativo
+  (sin interrogación ni condicionales), sin forzar ninguna marca ya
+  que es una tienda multimarca: "Tu ordenador no funciona. Aquí lo
+  diagnosticamos hoy mismo." Tamaño del H1 aumentado: clamp(38-56px) →
+  clamp(46-74px) en escritorio, 40px → 48px en móvil.
 
 REVISIÓN (fixes estándar aplicados):
 - Menú móvil: no existía botón de menú en móvil (.links se ocultaba a
