@@ -92,3 +92,10 @@ REVISIÓN (fixes estándar aplicados):
 - Ya incluía datos schema.org LocalBusiness correctos; no se ha tocado.
 - Dominio (serviciopcmadrid.com.es) coherente en canonical, og:url,
   robots.txt, sitemap.xml, README y JSON-LD; no se ha tocado.
+
+REVISIÓN ADICIONAL (a petición del cliente, regla general de la familia):
+- Quitada la pestaña/etiqueta rotada del hero (.hero-chip o
+  .hero-tag) que sobresalía y se solapaba visualmente con la caja de
+  información en anchos de tablet/escritorio medio (detectado con
+  captura en vivo en AcerTech). Regla para toda la familia: no volver
+  a añadir este tipo de elemento decorativo.
